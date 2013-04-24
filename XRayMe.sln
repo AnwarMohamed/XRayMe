@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XRayMe-Test", "XRayMe-Test\XRayMe-Test.vcxproj", "{516EF9F8-D318-442D-941F-FE2D84CEA556}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D0AD1764-660B-4424-B334-740E6254E816} = {D0AD1764-660B-4424-B334-740E6254E816}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XRayMe-DLL", "XRayMe-DLL\XRayMe-DLL.vcxproj", "{D0AD1764-660B-4424-B334-740E6254E816}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{516EF9F8-D318-442D-941F-FE2D84CEA556}.Debug|Win32.ActiveCfg = Debug|Win32
+		{516EF9F8-D318-442D-941F-FE2D84CEA556}.Debug|Win32.Build.0 = Debug|Win32
+		{516EF9F8-D318-442D-941F-FE2D84CEA556}.Release|Win32.ActiveCfg = Release|Win32
+		{516EF9F8-D318-442D-941F-FE2D84CEA556}.Release|Win32.Build.0 = Release|Win32
+		{D0AD1764-660B-4424-B334-740E6254E816}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0AD1764-660B-4424-B334-740E6254E816}.Debug|Win32.Build.0 = Debug|Win32
+		{D0AD1764-660B-4424-B334-740E6254E816}.Release|Win32.ActiveCfg = Release|Win32
+		{D0AD1764-660B-4424-B334-740E6254E816}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
