@@ -6,7 +6,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XRayMe-Test", "XRayMe-Test\
 		{D0AD1764-660B-4424-B334-740E6254E816} = {D0AD1764-660B-4424-B334-740E6254E816}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XRayMe-DLL", "XRayMe-DLL\XRayMe-DLL.vcxproj", "{D0AD1764-660B-4424-B334-740E6254E816}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XRayMe", "XRayMe\XRayMe.vcxproj", "{D0AD1764-660B-4424-B334-740E6254E816}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

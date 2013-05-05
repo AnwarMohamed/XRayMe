@@ -20,7 +20,7 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "XRayMe-DLL.h"
+#include "XRayMe.h"
 
 
 #ifdef UNICODE

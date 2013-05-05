@@ -14,7 +14,7 @@
     <ProjectGuid>{D0AD1764-660B-4424-B334-740E6254E816}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>XRayMe</RootNamespace>
-    <ProjectName>XRayMe-DLL</ProjectName>
+    <ProjectName>XRayMe</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

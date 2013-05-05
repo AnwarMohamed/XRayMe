@@ -20,7 +20,7 @@
 
 
 #include <conio.h>
-#include "XRayMe-DLL.h"
+#include "XRayMe.h"
 //#include "cFile.h"
 
 

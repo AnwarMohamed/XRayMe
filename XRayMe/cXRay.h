@@ -1,5 +1,5 @@
 #pragma once
-#include "XRayMe-DLL.h"
+#include "XRayMe.h"
 
 struct XRAY_VIRUS_DEFINITION
 {
@@ -28,6 +28,11 @@ struct XRAY_VIRUS_DEFINITION
 
 };
 
+#define TYPE_XOR	0x0001
+#define TYPE_ADD	0x0002
+#define TYPE_ROL	0x0004
+#define TYPE_NEG	0x0008
+#define TYPE_SUB	0x0010
 
 class DLLEXPORT cXRay
 {
@@ -35,23 +40,15 @@ class DLLEXPORT cXRay
 	DWORD	Buffer;			//The Pointer to the last checked file
 	DWORD	Size;
 	BOOL	IsInfected;		//true if the last checked file is infected with the virus
+	BOOL	Scan();
 
-	cPEFile*	File;
-	BOOL		Scan();
-
-	UINT	InfectedSec;
-	DWORD	Entrypoint;
-	image_section_header* Sections;
-
-	BOOL FoundEPO;
-	PUCHAR CallPtr;
 public:
 	cXRay(XRAY_VIRUS_DEFINITION* VirusDefinition);
 	~cXRay();
 
 	DWORD	CheckFile(CHAR* Buffer, DWORD Size);	//return entrypoint or NULL instead ... and set InInfected = true if it's infected
-	DWORD	CheckFile(cFile*  cFilePointer);		//set the Buffer = File->BaseAddress and the Size = FileLength
-	DWORD	CheckFile(CHAR* Filename);
+	DWORD	CheckFile(cFile*  File);		//set the Buffer = File->BaseAddress and the Size = FileLength
+
 	DWORD	GetValue(DWORD* Ptr);					//decrypt 4 bytes and return them
 	SHORT	GetValue(SHORT* Ptr);					//decrypt 2 bytes and return them
 	CHAR	GetValue(CHAR* Ptr);					//decrypt 1 byte and return it

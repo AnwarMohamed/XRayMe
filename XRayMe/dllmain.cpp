@@ -1,4 +1,4 @@
-#include "XRayMe-DLL.h"
+#include "XRayMe.h"
 
 BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,

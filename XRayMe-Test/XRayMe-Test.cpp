@@ -1,4 +1,4 @@
-#include "..\XRayMe-DLL\XRayMe-DLL.h"
+#include "..\XRayMe\XRayMe.h"
 #include <iostream>
 
 using namespace std;
@@ -49,8 +49,13 @@ INT main(INT argc, CHAR *argv[])
 	VirusDef.Signature.Ptr = (PDWORD)VirutSign;
 	VirusDef.Signature.Size = VirutSignSize;
 
+	VirusDef.BufferAlgorithm.Type  = TYPE_XOR;
+
+	cFile* File;
+	File = new cFile(argv[1]);
+
 	XRayFile = new cXRay(&VirusDef);
-	XRayFile->CheckFile(argv[1]);
+	XRayFile->CheckFile(File);
 
 	if (!XRayFile->BufferLoaded)
 	{
@@ -59,5 +64,7 @@ INT main(INT argc, CHAR *argv[])
 	}
 
 	system("PAUSE");
+	free(File);
+	free(XRayFile);
 	return EXIT_SUCCESS;
 }
